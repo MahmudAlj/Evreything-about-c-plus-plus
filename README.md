@@ -6,6 +6,7 @@ The Topics
     donguler
     diziler
     vectorler
+    std::array
     pointer
     operatorler
     random

@@ -10,4 +10,5 @@ The Topics
     pointer
     operatorler
     random
-    
+    union
+    struct

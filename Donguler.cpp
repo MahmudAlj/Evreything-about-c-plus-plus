@@ -32,7 +32,7 @@ for (int i = 0; i <= 10; i++) { // This is a for loop where in the first block, 
 		std::cout << i << " ";
 	}
 
-start:
+start: // goto  
 
 std::cout << "Hello" << std::endl;
 int age;

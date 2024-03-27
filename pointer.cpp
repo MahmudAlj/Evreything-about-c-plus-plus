@@ -138,14 +138,14 @@ std::cout <<"*ptr2 + 2 = "<< *ptr2 + 2 << std::endl;  // sayi + 2 yazdirlir
 
 
 int x = 10;
-int* p;
-p = &x;
-*p = 12;
-int** q = &p;
+int* psen;
+psen = &x;
+*psen = 12;
+int** q = &psen;
 int *** r = &q;
 
-std::cout << p  << std::endl; // adres
-std::cout << *p << std::endl; //12
+std::cout << psen  << std::endl; // adres
+std::cout << *psen << std::endl; //12
 std::cout << *q << std::endl; // adres
 std::cout <<*(*q) << std::endl; // 12
 std::cout <<*(*r) << std::endl; // adres
@@ -153,7 +153,8 @@ std::cout <<*(*(*r)) << std::endl; // 12
 ***r = 100; // x in degrini 100 yapar
 std::cout << x;  // x == 100
 
-int a, b;
+int a;
+int b;
 a = 10;
 b = ben(&a); // referanse ile fonksıyona ainin adresini atama
 std::cout << b;

@@ -137,8 +137,8 @@ std::cout << std::endl;
 	//MATRİXLER
 
 	int matrix[3][3] = { { 0,0,0 }, // burda bir 3 boyutlu dizi tanimlanmis 
-					        { 0,1,0 }, // (tek satirdada kullanilir)
-					        { 0,0,0 } };
+					     { 0,1,0 }, // (tek satirdada kullanilir)
+					     { 0,0,0 } };
 
 	for (int i = 0; i < 3; i++) { // ic ice for dongusu ile dizi elemanlarini yazmak icin kullanilir (satir sutun ile orneklendirilebilir)
 		for (int j = 0; j < 3; j++) { // i'ye satir denirse j'ye sutun denir oda her i calistignda 3 kere sutun yazilir her j calistinda 3 rakam girilir

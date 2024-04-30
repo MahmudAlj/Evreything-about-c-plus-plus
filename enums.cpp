@@ -20,8 +20,7 @@
 
 int main(){
 enum color{red,blue,green,black}; // enum list ornegidir
-color my = red;
-my = 10;
+color my = red; // 0
 std::cout<< my << std::endl;
 
 

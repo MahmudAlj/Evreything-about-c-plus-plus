@@ -1,8 +1,8 @@
 #include <iostream>
 //https://cplusplus.com/doc/tutorial/
-
+using std::string; // using namespace std gibi ama sadece string veri tipine kullanmak istersen boyle kullanılır
 typedef int numbers; // assigns a name to a data type, so that name can be used instead of the data type
- 
+
 namespace namek{ // used for defining a function within a namespace
        int add(int a, int b){
               int sum = a + b;
@@ -50,7 +50,7 @@ right = false;
 size_t age2; // commonly used to represent sizes such as memory sizes and array sizes, starting from zero or larger values
 age2 = 19;
 
-std::string name; // used to define string variables
+string name; // used to define string variables
 name = "Mahmud";
 
 std::cout << "data types" << std::endl;
@@ -85,7 +85,7 @@ std::cout << "short = " << num5 <<  std::endl;
 std::cout << "volatile = " << num6 <<  std::endl;
 
 
-using name_me = std::string; // creates a new name for a data type
+using name_me = string; // creates a new name for a data type
 name_me nameme = "mahmud"; // assigns the std::string data type to name_me, and from now on name_me can be used instead of std::string
 std::cout << nameme;
 

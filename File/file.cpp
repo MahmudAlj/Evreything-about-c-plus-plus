@@ -1,17 +1,15 @@
 #include <iostream>
 #include <fstream>
-#include <thread>
+
 
 
 int main(){
-    std::fstream MyFile("benim.txt"); // file belirleme 
-    MyFile.open("benim.txt", std::ios::out);
+    std::ofstream oMyFile("benimo.txt"); // output file 
+    std::ifstream iMyFile("benimi.txt"); //  input file
     
-    MyFile << "benim seni cok seviyorumfdsfsdfsdf fdsfsdksdjfsjebfkjdkfsdf"; // dosyanın icine yazma
-    MyFile << "\n";
-    MyFile << "ljsdkjfldjfkjdljfksjflkdjflkjdkljdjf";
+    iMyFile << "benim seni cok seviyorumfdsfsdfsdf fdsfsdksdjfsjebfkjdkfsdf"; // dosyanın icine yazma
+    oMyFile << "ljsdkjfldjfkjdljfksjflkdjflkjdkljdjf";
   
     
-    return 0;
-   
+    return 0;  
 }

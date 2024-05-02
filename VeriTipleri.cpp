@@ -1,6 +1,7 @@
 #include <iostream>
 //https://cplusplus.com/doc/tutorial/
 using std::string; // using namespace std gibi ama sadece string veri tipine kullanmak istersen boyle kullanılır
+
 typedef int numbers; // assigns a name to a data type, so that name can be used instead of the data type
 
 namespace namek{ // used for defining a function within a namespace

@@ -63,14 +63,14 @@ int main(){
 	int sayi ; //bir degisken tanımlama 
 	for (int i = 1; i < 10; i++) { // 1 ıle 10 sayilar arası sayi degiskenine atama
 		sayi = i;
-	//birsayikupu(&sayi); // fonskıyon ıle ıletısım ıcın sayi degiskeninin adresini atama 
-		std::cout << sayi << std::endl; // pointerla alına kuplerı ekrana yazdırılır 
+	  std::cout << sayi << " "; // pointerla alına kuplerı ekrana yazdırılır 
 	}
+	std::cout<< "\n";
 	
 	int* ptrd; //pointer bir degisken tanımlar
 	int dizi[5] = { 2,3,4,5,6 }; // 5 elemanlı bir dizi tanımlar
 	ptrd = &dizi[0];// pointer degiskeni dizinin bulundugu adrese atar
-	//ptrd = dizi;//pointer degiskeni dizinin bulundugu adrese atar ( dizi kendısı bir pointer oldugu ıcın yukardakı ıle aynı  )
+	ptrd = dizi;//pointer degiskeni dizinin bulundugu adrese atar ( dizi kendısı bir pointer oldugu ıcın yukardakı ıle aynı  )
 	for (int i = 0; i < 5; i++) { // 5 kere donen dongu
 		std::cout << dizi[i] << " = " << &dizi[i] << std::endl; //ilk degisken bir sayi verir icin ve ikincisi adresi verir
 		std::cout << ptrd[i] << " = " << &ptrd[i] << std::endl; //ilk degisken bir sayi verir icin ve ikincisi adresi verir
@@ -90,12 +90,12 @@ int main(){
 	std::cout << " o = " << o << std::endl;// reference olarak baglandiklari icin o = p
 
 
-int sayi = 10; // bir sayi baslatilir
+int sayion = 10; // bir sayi baslatilir
 int *ptr = NULL; // bir pointer baslatilir ve bosa atilir
-ptr = &sayi; // sayinin adresi bos pointerin icine atilir
+ptr = &sayion; // sayinin adresi bos pointerin icine atilir
 
-std::cout <<"sayi= " <<sayi << std::endl; // sayinin kendisini yazdirir
-std::cout <<"&sayi= "<< &sayi << std::endl; //sayinin adresini yazdirir
+std::cout <<"sayi= " <<sayion << std::endl; // sayinin kendisini yazdirir
+std::cout <<"&sayi= "<< &sayion << std::endl; //sayinin adresini yazdirir
 std::cout <<"ptr= "<< ptr << std::endl; // sayinin adresini yazdirir
 std::cout <<"*ptr= "<< *ptr << std::endl; // sayinin kendısını yazdirir
 std::cout <<"&ptr= "<< &ptr << std::endl; // ptrin adresini yazdirir
@@ -137,9 +137,9 @@ std::cout <<"*ptr2 + 1 = "<< *ptr2 + 1 << std::endl;  // sayi + 1 yazdirlir
 std::cout <<"*ptr2 + 2 = "<< *ptr2 + 2 << std::endl;  // sayi + 2 yazdirlir
 
 
-int x = 10;
+int xa = 10;
 int* psen;
-psen = &x;
+psen = &xa;
 *psen = 12;
 int** q = &psen;
 int *** r = &q;
@@ -153,23 +153,23 @@ std::cout <<*(*(*r)) << std::endl; // 12
 ***r = 100; // x in degrini 100 yapar
 std::cout << x;  // x == 100
 
-int a;
+int on;
 int b;
-a = 10;
-b = ben(&a); // referanse ile fonksıyona ainin adresini atama
+on = 10;
+b = ben(&on); // referanse ile fonksıyona ainin adresini atama
 std::cout << b;
 
-int  a[] = {1,2,3,4,5,6,7,8,9,10};
-int *ptr = a;
-std::cout << a << std::endl; // adres
-std::cout << &a[2] << std::endl; // adres
-std::cout << a[4] << std::endl; // 5
-std::cout << &a << std::endl; // adres
-std::cout << ptr << std::endl; // adres
-std::cout << ptr[3] << std::endl; // 4
-std::cout << *(ptr + 3) << std::endl; // 4
-std::cout << (a + 3) << std::endl; // adres
-std::cout << *(a + 0) << std::endl; // 1
+int  array[] = {1,2,3,4,5,6,7,8,9,10};
+int *ptrm = array;
+std::cout << array << std::endl; // adres
+std::cout << &array[2] << std::endl; // adres
+std::cout << array[4] << std::endl; // 5
+std::cout << &array << std::endl; // adres
+std::cout << ptrm << std::endl; // adres
+std::cout << ptrm[3] << std::endl; // 4
+std::cout << *(ptrm + 3) << std::endl; // 4
+std::cout << (array + 3) << std::endl; // adres
+std::cout << *(array + 0) << std::endl; // 1
 
    return 0;
 }

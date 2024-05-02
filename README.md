@@ -12,3 +12,7 @@ The Topics
     random
     union
     struct
+    enums
+    istisnai durumlar 
+    veri yapilari 
+    file islemleri

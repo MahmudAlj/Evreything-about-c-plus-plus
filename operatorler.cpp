@@ -6,7 +6,6 @@
 #include <cmath>
 int main(){
 
-   int main(){
     int x = 20;
 	int y = 12;
 	bool l = true;
@@ -108,7 +107,4 @@ int main(){
 	int h = y >> 2;  // Right Shift (>>): Shifts the bits of a number to the right by a specified number of positions.
 	std::cout << "Right shift result: " << h << std::endl;
 	return 0;
-}
-
-    return 0;
 }

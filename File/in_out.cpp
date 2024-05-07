@@ -64,7 +64,29 @@ int main(){
 
 //float type 
 
+double num = 1234.5678;
 
+std::cout << num << std::endl;
 
+double num1 = 123456789.987654321;
+
+// std::cout << std::setprecision(9);
+// std::cout << num1 << std::endl;
+
+// std::cout << std::fixed;
+// std::cout << num1 << std::endl;
+
+// std::cout << std::setprecision(4) << std::fixed;
+// std::cout << num1 << std::endl;
+
+// std::cout << std::setprecision(3)
+//           << std::scientific;
+// std::cout << num1 << std::endl;
+
+// std::cout << std::setprecision(3) << std::scientific << std::uppercase;
+// std::cout << num1 << std::endl;
+
+std::cout << std::setprecision(3) << std::fixed << std::showpos;
+std::cout << num1 << std::endl;
     return 0;
 }

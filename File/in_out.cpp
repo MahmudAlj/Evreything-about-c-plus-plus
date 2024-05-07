@@ -26,6 +26,43 @@ int main(){
 // std::cout << (100 == 200) << std::endl; // 0
  
 
+// integer type 
+
+// int num = 85;
+
+//setting using the set method
+// std::cout.setf(std::ios::uppercase);
+
+// std::cout << std::noshowbase << std::nouppercase;
+// std::cout << std::dec << num << std::endl; // 85
+// std::cout << std::hex << num << std::endl; // 55
+// std::cout << std::oct << num << std::endl; // 125
+
+// std::cout.setf(std::ios::showbase);
+// std::cout << std::showbase << std::uppercase;
+// std::cout << std::dec << num << std::endl; // 85
+// std::cout << std::hex << num << std::endl; // 0X55
+// std::cout << std::oct << num << std::endl; // 0125
+
+// int num1 = 12;
+// int num2 = -12;
+
+// std::cout << std::noshowpos;
+// std::cout << num1 << std::endl; // 12
+// std::cout << num2 << std::endl; // -12
+
+// std::cout.setf(std::ios::showpos);
+// std::cout << std::showpos;
+// std::cout << num1 << std::endl; // +12
+// std::cout << num2 << std::endl; // -12
+
+//resetting to defaults
+// std::cout << std::resetiosflags(std::ios::basefield);
+// std::cout << std::resetiosflags(std::ios::showbase);
+// std::cout << std::resetiosflags(std::ios::showpos);
+// std::cout << std::resetiosflags(std::ios::uppercase);
+
+//float type 
 
 
 

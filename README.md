@@ -29,5 +29,7 @@ The Topics
     istisnai durumlar 
     veri yapilari 
     file islemleri
+        in_out 
+        
 
         

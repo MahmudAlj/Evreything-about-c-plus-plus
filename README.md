@@ -1,11 +1,12 @@
 This project is written with a little bit of everything available about C++.
 The Topics
     terminal komutlari
-    veri tipleri
-    yazdirma islemleri
-    kosul yapıları
-    donguler
-    diziler
+    veri tipleri                    OK
+    yazdirma islemleri              OK
+    kosul yapıları                  OK
+    donguler                        OK
+    diziler                         OK
+    operatorler                     OK
     vectorler
     std::array
     pointer
@@ -21,7 +22,6 @@ The Topics
         initialization
         friend function
         virtual function
-    operatorler
     random
     union
     struct

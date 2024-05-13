@@ -30,6 +30,7 @@ The Topics
     veri yapilari 
     file islemleri
         in_out 
+        file
         
 
         

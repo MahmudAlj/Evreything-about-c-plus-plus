@@ -107,7 +107,26 @@ int main(){
     
 
 //str::string type
+double num = 1234.5678;
+std::string name {"mahmud"};
 
+
+std::cout << "1234567890123456789012345678901234567890" << std::endl;
+// std::cout << std::setw(10) << num <<  name 
+//              << std::endl;
+// std::cout << std::setw(8) << num <<  name 
+//              << std::endl;
+// std::cout << std::setw(15) <<std::left << num <<  name 
+//              << std::endl;
+// std::cout << std::setw(8) << num
+//           << std::setw(8) << std::right << name
+//           << std::setw(8) << std::right << name
+//           << std::endl;
+// std::cout << std::setfill('+') 
+//           << std::setw(10) << name << num
+//           << std::setfill('-')
+//           << std::setw(15) << name 
+//           << std::endl;
 
 
     return 0;

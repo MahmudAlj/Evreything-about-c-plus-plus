@@ -2,6 +2,8 @@
 #include <iomanip> // must include for manipulators
 
 int main(){
+
+
 // //boolean type  1(true)0(false)
 
 // std::cout << (100 == 100) << std::endl; // 1
@@ -27,7 +29,6 @@ int main(){
  
 
 // integer type 
-
 // int num = 85;
 
 //setting using the set method
@@ -63,7 +64,6 @@ int main(){
 // std::cout << std::resetiosflags(std::ios::uppercase);
 
 //float type 
-
 // double num = 12.34;
 
 // std::cout << num << std::endl;
@@ -107,26 +107,31 @@ int main(){
     
 
 //str::string type
-double num = 1234.5678;
-std::string name {"mahmud"};
+// double num = 1234.5678;
+// std::string name {"mahmud"};
 
-
-std::cout << "1234567890123456789012345678901234567890" << std::endl;
+// std::cout << "1234567890123456789012345678901234567890" << std::endl;
 // std::cout << std::setw(10) << num <<  name 
 //              << std::endl;
+
 // std::cout << std::setw(8) << num <<  name 
 //              << std::endl;
+
 // std::cout << std::setw(15) <<std::left << num <<  name 
 //              << std::endl;
+
 // std::cout << std::setw(8) << num
 //           << std::setw(8) << std::right << name
 //           << std::setw(8) << std::right << name
 //           << std::endl;
+
 // std::cout << std::setfill('+') 
 //           << std::setw(10) << name << num
 //           << std::setfill('-')
 //           << std::setw(15) << name 
 //           << std::endl;
+
+
 
 
     return 0;

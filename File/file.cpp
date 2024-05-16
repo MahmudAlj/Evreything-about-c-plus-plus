@@ -15,8 +15,19 @@ int main(){
     //is_open
     //close
 
+std::ifstream my_file;
+my_file.open("C:\\Users\\aljma\\Documents\\GitHub\\Evreything-about-c-\\File\\benim.txt");
 
+std::string line;
+if(my_file.is_open()){
+    std::cerr << "your good " << std::endl;
+    return 0;
+}else{
+    std::cerr << "is not opening" << std::endl;
+    return 1;
+}
 
+my_file >> line;
 
     return 0;  
 }

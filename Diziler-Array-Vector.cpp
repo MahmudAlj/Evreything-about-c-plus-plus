@@ -2,8 +2,8 @@
 #include <array>
 #include <string>
 #include <vector>
-// dizi array vector nasıl yazırılır kontrol et
 
+//2d diziler 2d vectorler 2d std::array 
 int main(){
 //diziler
 // a dan z eye bir diziye atar ve yazdirir (kucuk harfler) 

@@ -31,6 +31,8 @@ The Topics
     file islemleri
         in_out 
         file
+    STL 
+        template
         
 
         

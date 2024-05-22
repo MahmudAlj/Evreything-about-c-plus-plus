@@ -9,9 +9,6 @@ T MIN(T a,T b){
     return ((a < b) ? a : b);
 }
 
-
-
-
 int main(){
 
 int a = 10;
@@ -19,8 +16,8 @@ int b = 20;
 float c = 9.3;
 float d = 34.3;
 std::cout << MAX(a,b);
-std::cout << MIN(a,b);
-std::cout << MIN(c,d); // temlate kullanarak hem interger veri tipinden hemde float veri tipinden islem yaptik bir fonksıyodan
+std::cout << MIN(a,b); // <intager>
+std::cout << MIN(c,d); // <float> temlate kullanarak hem interger veri tipinden hemde float veri tipinden islem yapan bir fonksıyodan
 
 std::list <int> mylist;
 
@@ -59,8 +56,6 @@ for(std::list<int>::iterator it = mysecond.begin(); it != mysecond.end(); it++){
     std::cout << *it << " ";
 }
 std::cout << std::endl;
-
-
 
 
     return 0;

@@ -3,6 +3,8 @@
 #include <string>
 #include <vector>
 #include <list>
+#include <deque>
+#include <forward_list>
 
 //2d diziler 2d vectorler 2d std::array listler 
 int main(){
@@ -244,17 +246,21 @@ int main(){
 // //Diğer İşlevler: std::vector'ün diğer birçok işlevi bulunur, örneğin insert(), erase(), resize(), swap(), emplace_back(), ve daha fazlası. İhtiyacınıza göre belirli işlemleri gerçekleştirmek için bu işlevleri kullanabilirsiniz.
 
 
-// std::list bunu bıtır
-std::list<int> mylist;
+// // std::list bunu bıtır
+// std::list<int> mylist;
 
-mylist.push_back(30);
-mylist.push_front(20);
-mylist.push_front(10);
-mylist.push_back(40);
+// mylist.push_back(30);
+// mylist.push_front(20);
+// mylist.push_front(10);
+// mylist.push_back(40);
 
-for(std::list<int>::iterator it = mylist.begin(); it != mylist.end(); it++){
-	std::cout << *it << " ";
-}
+// for(std::list<int>::iterator it = mylist.begin(); it != mylist.end(); it++){
+// 	std::cout << *it << " ";
+// }
+//std::advance
+//std::deque
+
+std::deque <int> d{1,2,3,4,5};
 
     return 0;
 }

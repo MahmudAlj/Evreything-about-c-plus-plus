@@ -1,5 +1,8 @@
 #include <iostream>
 #include <list>
+#include <array>
+#include <set>
+#include <map>
 #define my_age 19
 #define my_weight 78
 #define MAX(a,b) ((a > b) ? a : b)
@@ -56,6 +59,8 @@ for(std::list<int>::iterator it = mysecond.begin(); it != mysecond.end(); it++){
     std::cout << *it << " ";
 }
 std::cout << std::endl;
+
+
 
 
     return 0;

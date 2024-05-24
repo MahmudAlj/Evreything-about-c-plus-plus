@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 //https://cplusplus.com/doc/tutorial/
 using std::string; // using namespace std gibi ama sadece string veri tipine kullanmak istersen boyle kullanılır
 
@@ -25,7 +26,7 @@ using namespace namek; // used to constantly invoke the add function
 
 // extern name_global;  // used to indicate that global variables or functions are defined in another file
 
-int main(){
+int main(void){
 numbers num12 = 12;  // using the name defined by typedef instead of int (numbers)
 std::cout << num12;
 int age; // used to define an integer variable
@@ -100,5 +101,11 @@ std::cout << nameme;
 
    std::cout << add(namem::age, namel::age); // using the add function continuously due to the using keyword 
        
-    return 0;
+       //return 0;
+       //exit(0);
+       //std::cin.get();
+       //std::terminate();
+       //std::abort();
+       //std::quick_exit(0); calişmadi
+       
 }

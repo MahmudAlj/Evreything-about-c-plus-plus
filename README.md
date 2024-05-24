@@ -34,6 +34,15 @@ The Topics
     STL 
         template
         std::list
+        algorithm 
+        std::map
+        std::deque
+        std::set
         
 
         
+
+
+
+
+

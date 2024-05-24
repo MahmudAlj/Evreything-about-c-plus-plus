@@ -1,9 +1,12 @@
 #include <iostream>
-
+//https://cplusplus.com/reference/algorithm/
 int main(){
 
 //find
 //for_each
-
-    return 0;
+//tranform
+ 
+ //if ::---- boyle bır fonskıyon kullanılırsa global scope olur 
+  
+    std::cin.get();
 }

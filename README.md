@@ -38,6 +38,7 @@ The Topics
         std::map
         std::deque
         std::set
+        std::queue
         
 
         

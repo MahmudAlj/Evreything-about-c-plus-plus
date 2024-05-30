@@ -9,6 +9,8 @@
 // unıque pointer
 // shared pointer 
 // weak pointer
+// memory delete vs
+
 
  
 int ben(int *p);

@@ -112,7 +112,7 @@ std::cout << std::endl;
 	
 
 	int dizivar[6] = { 18,19,20,17,16,15 }; // inetger bir dizi elemanlarini tanimlar
-	std::string dizivar2[5] = { "mahmud", "code", "c++" , "gokay", "adnan" }; // string ifade dizi elemanlarini tanimlar
+	std::string dizivar2[5] = { "mahmud", "code", "c++" , "gokay", "sila" }; // string ifade dizi elemanlarini tanimlar
 	char dizivar3[10] = { 'a','b','c','d','e','f','g','h','i','j' }; // character karakter dizi elemanlarini tanimlar
 
 

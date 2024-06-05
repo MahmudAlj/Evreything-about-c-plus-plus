@@ -39,6 +39,9 @@ The Topics
         std::deque
         std::set
         std::queue
+    lambda
+        function
+        
         
 
         

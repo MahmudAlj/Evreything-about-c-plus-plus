@@ -1,5 +1,9 @@
 #include <iostream>
 #include <cstdlib>
+#include <variant>
+#include <iostream>
+
+
 //https://cplusplus.com/doc/tutorial/
 using std::string; // using namespace std gibi ama sadece string veri tipine kullanmak istersen boyle kullanılır
 
@@ -27,6 +31,17 @@ using namespace namek; // used to constantly invoke the add function
 // extern name_global;  // used to indicate that global variables or functions are defined in another file
 
 int main(void){
+       
+       std::variant<int, float, double> ornekvari;
+       ornekvari = 10;
+       std::cout << "integer: " << std::get<int>(ornekvari) << std::endl;
+       ornekvari = 10.5435f;
+       std::cout << "float: " << std::get<float>(ornekvari) << std::endl;
+       ornekvari = 10342.324324;
+       std::cout << "double: " << std::get<double>(ornekvari) << std::endl;
+
+
+
 numbers num12 = 12;  // using the name defined by typedef instead of int (numbers)
 std::cout << num12;
 int age; // used to define an integer variable

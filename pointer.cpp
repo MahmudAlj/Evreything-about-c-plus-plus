@@ -10,6 +10,7 @@
 // shared pointer 
 // weak pointer
 // memory delete vs
+// const 
 
 
  

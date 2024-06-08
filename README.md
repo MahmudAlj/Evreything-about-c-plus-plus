@@ -7,9 +7,9 @@ The Topics
     donguler                        OK
     diziler                         OK
     operatorler                     OK
-    vectorler
-    std::array
-    pointer
+    vectorler                       OK
+    std::array                      OK
+    pointer                         O
         class 
         constructor_destructor
         object relationships
@@ -22,11 +22,17 @@ The Topics
         initialization
         friend function
         virtual function
-    random
+        inline function
+        static - override function
+
+    random                          OK
     union
     struct
     enums
     istisnai durumlar 
+        throw
+        try
+        catch
     veri yapilari 
     file islemleri
         in_out 
@@ -40,8 +46,9 @@ The Topics
         std::set
         std::queue
     lambda
-        function
-        
+        std::function
+        std::sort 
+        std::for::each
         
 
         

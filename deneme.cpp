@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-
+/// @brief 
 class evrey {
 private:
     int real;

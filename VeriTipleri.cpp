@@ -85,11 +85,12 @@ std::cout << "string = " << name <<  std::endl;
 //data type (modifiers)
 
 const int num = 18.11; // remains constant throughout the code and cannot be changed
+
 signed num1 = 50; // standard version of an integer data type
-long num2 = 34242340L; // used to store larger integer numbers
+long num2 = 34242340L; // used to store larger integer numbersSS
 long long num3 = 1234567890123456789LL; // used to store a wider range of large integer numbers
 unsigned num4 = 100; // used to store unsigned integer numbers (only positive integer numbers)
-short num5 = 10; // used to store a smaller range of integer numbers
+short int num5 = 10; // used to store a smaller range of integer numbers
 volatile int  num6 = 90; // used to indicate that a variable can be changed at any time and these changes should not be optimized by the compiler
 
 std::cout << "data type (modifiers)" << std::endl; 

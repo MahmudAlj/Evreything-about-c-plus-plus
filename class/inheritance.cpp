@@ -50,6 +50,7 @@ class sc: public animal{ // alt class (derived class) temel sınıfıtan mıras 
 
 
 
+// abstract
 // //1 base class
 // //2 derived class
 // //ile opeartor overloading toplama islemi ile iki objenın value toplamı

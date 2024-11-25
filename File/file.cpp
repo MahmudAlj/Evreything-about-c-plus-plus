@@ -4,8 +4,8 @@
 
 
 int main(){
-    // std::ofstream oMyFile("benimo.txt"); // output file 
-    // std::ifstream iMyFile("benimi.txt"); // input file
+    // std::ofstream oMyFile("benimo.txt"); // output file  write
+    // std::ifstream iMyFile("benimi.txt"); // input file   read
     
     // iMyFile << "benim seni cok seviyorumfdsfsdfsdf fdsfsdksdjfsjebfkjdkfsdf"; // dosyanın icine yazma
     // oMyFile << "ljsdkjfldjfkjdljfksjflkdjflkjdkljdjf";

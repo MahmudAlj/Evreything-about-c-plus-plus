@@ -6,15 +6,15 @@ class animal{ // temel class (base class) ozellıklerı ve ıslevsellıgı mıra
     public:
     int age;
     std::string name; 
-     std::string name1;
+    std::string name1;
     int age1;
- int boy = 10; 
+    int boy = 10; 
 animal(){   //  default constructor kullanımındır 
     std::cout << "constructor "<< std::endl;
 }
 animal(std::string name1, int age1){ // value constructor kullanımıdır
     std::cin >> name1;
-     std::cin >> age1;
+    std::cin >> age1;
 }
     void print(){
         std::cin >> age;
@@ -23,7 +23,7 @@ animal(std::string name1, int age1){ // value constructor kullanımıdır
     void ok(){
         std::cout << age << std::endl;
         std::cout << name << std::endl;
-          std::cout << age1 << std::endl;
+        std::cout << age1 << std::endl;
         std::cout << name1 << std::endl;
     }
     ~animal(){ // destructor kullaımıdır
@@ -32,7 +32,7 @@ animal(std::string name1, int age1){ // value constructor kullanımıdır
 };
 class cins: public animal{ // alt class (derived class) temel sınıfıtan mıras alır ve temek sınıfın ozellıklerını kullanır veya bunları genısletır 
     public:
-     int free;
+    int free;
  void Havla() {
         std::cout << "Hav hav!" << std::endl;
     } 

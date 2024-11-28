@@ -1,8 +1,9 @@
 #include <iostream>
 #include <string>
 
-static const long long int ana_konum = 100000000
-
+static const long long int ana_konum = 100000000;
+static int okul_sayisi = 0;
+static int ogrenci_sayisi = 0;
 class Ogrenci{
 protected:
     int age = 20;
@@ -21,7 +22,8 @@ public:
     
 
     Ogrenci(){
-        std::cout << "program basladi" << std::endl;
+        std::cout << "Ogrenci basladi" << std::endl;
+        ogrenci_sayisi++;
     }
 
     void  bilgi_al(){
@@ -50,7 +52,9 @@ public:
         std::cout << " senin girdigin sene = " << girdigi_sene << std::endl;
         std::cout << " senin aldigin ders sayisi = " << aldigi_ders_sayisi  << std::endl;
         std::cout << " kaldigin konum = " << konum << std::endl;
+        std::cout << " simdiye kadar bu kadar ogrenci basvurdu = " << ogrenci_sayisi << std::endl;
     }
+
     bool onaylama(){
         bool begendinmi;
         std::cout << "programi begendinmi " << std::endl;
@@ -74,10 +78,11 @@ public:
 
 class Universite{
     protected:
-      
+        char bos = NULL;
     private:
         long int konum;
         konum = ana_konum + 1;
+        
     public:
         int yapim_yili;
         std::string okul_name;
@@ -87,9 +92,32 @@ class Universite{
         int bolum_sayisi;
         int kutuphane_sayisi;
         int yemekhane_sayisi;
-        
-    
 
+    Universite(){
+        std::cout << "class basladi " << std::endl;
+        okul_sayisi++;
+    }
+
+    void veri_al(){ // switch case ile yapilcak 
+        std::cout << " merhaba bana universite bilgilerini ver " << std::endl;
+        std::cout << " universitenin yapim yili kac " << std::endl;
+        std::cin >> yapim_yili;
+        std::cout << " okulun adi ne " << std::endl;
+        std::getline(std::cin, okul_name);
+        std::cout << "ogrenci sayisini gir " << std::endl;
+        std::cin >> ogrenci_sayisi;
+        std::cout << " bina sayisini gir " << std::endl;
+        std::cin >> bina_sayisi;
+        std::cout << " fakulte sayisini gir " << std::endl;
+        std::cin >> fakulte_sayisi;
+        std::cout << " bolum sayisini gir " << std::endl;
+        std::cin >> bolum_sayisi; 
+        std::cout << " kutuphane ve yemekhane sayilarini gir " << std::endl; 
+        std::cin >> kutuphane_sayisi, yemekhane_sayisi;
+    }
+
+    void bilgiler_yaz(){
+    }
 
 
 
@@ -104,7 +132,12 @@ Ogrenci benim;
 benim.bilgi_al();
 benim.bilgileri_dogrula();
 benim.onaylama();
-    
+std::cin.ignore();
+Ogrenci benim2;
+benim2.bilgi_al();
+benim2.bilgileri_dogrula();
+benim2.onaylama();
+
 
 
     return 0;

@@ -1,11 +1,12 @@
 #include <iostream>
 #include <string>
 
+static const long long int ana_konum = 100000000
 
-class ogrenci{
-    protected:
+class Ogrenci{
+protected:
     int age = 20;
-    float hight = 1.80f;
+    double hight = 1.80;
 
 private:
     std::string name = "mahmud";
@@ -16,12 +17,12 @@ public:
     std::string okudugu_bolum;
     int girdigi_sene;
     int aldigi_ders_sayisi;
-  
+    long long int konum;
+    
 
-    ogrenci(){
+    Ogrenci(){
         std::cout << "program basladi" << std::endl;
     }
-
 
     void  bilgi_al(){
         std::cout << "merhaba bana bilgilerini ver " << std::endl;
@@ -33,6 +34,8 @@ public:
         std::cin >> girdigi_sene;
         std::cout << "aldigin ders sayisini yazarmisin " << std::endl;
         std::cin >> aldigi_ders_sayisi;
+        std::cout << "kaldigi konum nedir " << std::endl;
+        std::cin >> konum;
          
     }
 
@@ -46,8 +49,9 @@ public:
         std::cout << " senin okudugun bolum = " << okudugu_bolum << std::endl;
         std::cout << " senin girdigin sene = " << girdigi_sene << std::endl;
         std::cout << " senin aldigin ders sayisi = " << aldigi_ders_sayisi  << std::endl;
+        std::cout << " kaldigin konum = " << konum << std::endl;
     }
-        bool onaylama(){
+    bool onaylama(){
         bool begendinmi;
         std::cout << "programi begendinmi " << std::endl;
         std::cin >> begendinmi;
@@ -62,14 +66,41 @@ public:
         return begendinmi;
     }
 
-    ~ogrenci(){
+    ~Ogrenci(){
     std::cout << "destruct calisti" << std::endl;
     }
+};
+
+
+class Universite{
+    protected:
+      
+    private:
+        long int konum;
+        konum = ana_konum + 1;
+    public:
+        int yapim_yili;
+        std::string okul_name;
+        int ogrenci_sayisi;
+        int bina_sayisi;
+        int fakulte_sayisi;
+        int bolum_sayisi;
+        int kutuphane_sayisi;
+        int yemekhane_sayisi;
+        
+    
+
+
+
+
+
 
 };
+
+
 int main(){
 
-ogrenci benim;
+Ogrenci benim;
 benim.bilgi_al();
 benim.bilgileri_dogrula();
 benim.onaylama();

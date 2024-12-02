@@ -4,6 +4,8 @@
 static const long long int ana_konum = 100000000;
 static int okul_sayisi = 0;
 static int ogrenci_sayisi = 0;
+
+
 class Ogrenci{
 protected:
     int age = 20;
@@ -78,10 +80,9 @@ public:
 
 class Universite{
     protected:
-        char bos = NULL;
+       
     private:
-        long int konum;
-        konum = ana_konum + 1;
+        long int konum = ana_konum + 1;
         
     public:
         int yapim_yili;
@@ -117,15 +118,21 @@ class Universite{
     }
 
     void bilgiler_yaz(){
+        std::cout << okul_name << yapim_yili << " yilinda yapildi " << std::endl;
+        std::cout << ogrenci_sayisi << " okuyan kisi vardir " << std::endl;
+        std::cout << bina_sayisi << " bina vardir" << std::endl;
+        std::cout << fakulte_sayisi << " fakulte vardir" << std::endl;
+        std::cout << bolum_sayisi << " bolum vardir" << std::endl;
+        std::cout << kutuphane_sayisi << " calisma alani vardir " << std::endl;
+        std::cout << yemekhane_sayisi << " yemekhane vardir " << std::endl;
+
     }
-
-
-
-
-
+    ~Universite(){
+        std::cout << "coddan cikildi " << std::endl;
+    }
 };
 
-
+// bu alınan bilgiler 
 int main(){
 
 Ogrenci benim;
@@ -137,6 +144,10 @@ Ogrenci benim2;
 benim2.bilgi_al();
 benim2.bilgileri_dogrula();
 benim2.onaylama();
+std::cin.ignore();
+Universite bu1;
+bu1.veri_al();
+bu1.bilgiler_yaz();
 
 
 

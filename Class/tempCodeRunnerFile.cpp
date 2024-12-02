@@ -1,1 +1,0 @@
-benim.onaylama();

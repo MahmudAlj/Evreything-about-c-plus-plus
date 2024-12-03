@@ -140,11 +140,13 @@ benim.bilgi_al();
 benim.bilgileri_dogrula();
 benim.onaylama();
 std::cin.ignore();
+
 Ogrenci benim2;
 benim2.bilgi_al();
 benim2.bilgileri_dogrula();
 benim2.onaylama();
 std::cin.ignore();
+
 Universite bu1;
 bu1.veri_al();
 bu1.bilgiler_yaz();

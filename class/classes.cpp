@@ -41,6 +41,11 @@ public: // acik value
  protected: // private ama classın kendısı ve sınıfın alt sınıfları tarafından dogrudan erısılebılır fakat classın dısındakı yapılar tarafından erısım ıznı yoktur
 }; 
 
+class yeni{
+public:
+int be = 10;
+std::string be1 = "mahmud";
+};
 
 int main(){
     
@@ -52,6 +57,7 @@ bir.name2 = "mahmud"; // calısır cuku publicte saklı bır verı
 bir.al_veri(); //fonksıyon yardımıyla kullanıcı tafından verı almak 
 bir.yazdir(); // fonskıyon ıle alınan verı yazdırma
 
-
+// metod kullanmadan bır objenın ozellıklerını yazdırma 
+std::cout << "metod kullanmadan "<< bir.age2 << " " << bir.name2 << std::endl;
     return 0; // calısan butun destructorlar cagrılır 
 }

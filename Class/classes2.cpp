@@ -153,5 +153,8 @@ bu1.bilgiler_yaz();
 
 
 
+
+
+
     return 0;
 }

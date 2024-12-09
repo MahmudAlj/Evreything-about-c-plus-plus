@@ -66,5 +66,5 @@ std::cout <<"entered string variable =  "<< name << std::endl; // print the rece
 	if (length >= 6) std::cout << "hello " << nickname << std::endl; // if condition
 	else std::cout << "your name is too short, please enter your full name " << nickname << std::endl; // code that will run if the if condition is not met
  
-    return 0;
+    system(0);
 }

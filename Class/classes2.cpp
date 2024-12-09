@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <Vector>
 
 static const long long int ana_konum = 100000000;
 static int okul_sayisi = 0;
@@ -150,6 +151,9 @@ std::cin.ignore();
 Universite bu1;
 bu1.veri_al();
 bu1.bilgiler_yaz();
+
+
+std::Vector<Ogrenci> objeler;
 
 
 

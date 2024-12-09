@@ -40,8 +40,6 @@ int main(void){
        ornekvari = 10342.324324;
        std::cout << "double: " << std::get<double>(ornekvari) << std::endl;
 
-
-
 numbers num12 = 12;  // using the name defined by typedef instead of int (numbers)
 std::cout << num12;
 int age; // used to define an integer variable
@@ -117,11 +115,13 @@ std::cout << nameme;
 
    std::cout << add(namem::age, namel::age); // using the add function continuously due to the using keyword 
        
-       //return 0;
+       return 0;
        //exit(0);
+       //system(0);
        //std::cin.get();
        //std::terminate();
        //std::abort();
        //std::quick_exit(0); calişmadi
+       //bunlar bıtıs mesajlari
        
 }

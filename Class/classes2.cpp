@@ -33,8 +33,10 @@ public:
         std::cout << "merhaba bana bilgilerini ver " << std::endl;
         std::cout << "okudugun okulu yazarmsin " << std::endl;
         std::getline(std::cin, okudugu_okul);
+          std::cin.ignore();
         std::cout << "okudugun bolumu yazarmisin " << std::endl;
         std::getline(std::cin, okudugu_bolum);
+          std::cin.ignore();
         std::cout << "giridigin seneyi girermisin " << std::endl;
         std::cin >> girdigi_sene;
         std::cout << "aldigin ders sayisini yazarmisin " << std::endl;
@@ -136,27 +138,45 @@ class Universite{
 // bu alınan bilgiler 
 int main(){
 
-Ogrenci benim;
-benim.bilgi_al();
-benim.bilgileri_dogrula();
-benim.onaylama();
-std::cin.ignore();
+std::vector<Ogrenci> objelerO;
 
-Ogrenci benim2;
-benim2.bilgi_al();
-benim2.bilgileri_dogrula();
-benim2.onaylama();
-std::cin.ignore();
+    bool eklemekO;
+    do {
+        char cevap;
+        std::cout << "Ogrenci Eklemek ister misiniz? (e/h): ";
+        std::cin >> cevap;
+        eklemekO = (cevap == 'e' || cevap == 'E');
 
-Universite bu1;
-bu1.veri_al();
-bu1.bilgiler_yaz();
+        if (eklemekO) {
+            Ogrenci ogrenci;
+            ogrenci.bilgi_al();
+            std::cin.ignore();
+            ogrenci.bilgileri_dogrula();
+            ogrenci.onaylama();
+            objelerO.emplace_back(ogrenci);
+        }else{
+            break;
+        }
+    } while (eklemekO);
 
+std::vector<Universite> objelerU;
+bool eklemekU;
+    do {
+        char cevap;
+        std::cout << "Universite Eklemek ister misiniz? (e/h): ";
+        std::cin >> cevap;
+        eklemekU = (cevap == 'e' || cevap == 'E');
 
-std::Vector<Ogrenci> objeler;
-
-
-
+        if (eklemekU) {
+            Universite universite;
+            universite.veri_al();
+            std::cin.ignore();
+            universite.bilgiler_yaz();
+            objelerU.emplace_back(universite);
+        }else{
+            break;
+        }
+    } while (eklemekU);
 
 
 

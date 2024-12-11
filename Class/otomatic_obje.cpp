@@ -19,7 +19,11 @@ private:
 
 int main() {
     vector<MyClass> objects; 
-    for (int i = 0; i < 5; i++) {
+    int kisi;
+    std::cout << "kac kisi eklemek istiyosun" << std::endl;
+    std::cin >> kisi;
+    
+    for (int i = 0; i < kisi; i++) {
         objects.emplace_back(i); 
     }
 

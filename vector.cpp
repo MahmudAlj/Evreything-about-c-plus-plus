@@ -32,36 +32,36 @@ myVector.assign(5, 42); // Tüm elemanları 42 ile doldurur Vektörün boyutunu 
 }
 //metods
 /*
-vector::assign
-vector::at
-vector::back
-vector::begin
-vector::capacity
-vector::cbegin
-vector::cend
-vector::clear
-vector::crbegin
-vector::crend
-vector::data
-vector::emplace
-vector::emplace_back
-vector::empty
-vector::end
-vector::erase
-vector::front
-vector::get_allocator
-vector::insert
-vector::max_size
-vector::operator[]
-vector::operator=
-vector::pop_back
-vector::push_back
-vector::rbegin
-vector::rend
-vector::reserve
-vector::resize
-vector::shrink_to_fit
-vector::size
-vector::swap
+assign: Belirtilen değerlerle vektörü doldurur.
+at: Belirli bir indekste güvenli erişim sağlar (sınır kontrolleriyle).
+back: Vektörün son elemanını döndürür.
+begin: Vektörün başlangıç iteratorunu döndürür.
+capacity: Vektörün şu anda ayırdığı toplam kapasiteyi döndürür.
+cbegin: Değiştirilemez başlangıç iteratorunu döndürür.
+cend: Değiştirilemez bitiş iteratorunu döndürür.
+clear: Vektörün tüm elemanlarını siler.
+crbegin: Değiştirilemez ters başlangıç iteratorunu döndürür.
+crend: Değiştirilemez ters bitiş iteratorunu döndürür.
+data: Vektörün dahili veri göstericisini döndürür.
+emplace: Belirtilen konuma bir eleman yerleştirir.
+emplace_back: Vektörün sonuna bir eleman yerleştirir.
+empty: Vektörün boş olup olmadığını kontrol eder.
+end: Vektörün bitiş iteratorunu döndürür.
+erase: Belirtilen konumdaki veya aralıktaki elemanları siler.
+front: Vektörün ilk elemanını döndürür.
+get_allocator: Vektörün bellek tahsisi için kullandığı tahsis ediciyi döndürür.
+insert: Belirtilen konuma bir veya birden fazla eleman ekler.
+max_size: Vektörün tutabileceği maksimum eleman sayısını döndürür.
+operator[]: Belirtilen indekse hızlı erişim sağlar (sınır kontrolleri olmadan).
+operator=: Vektöre başka bir vektör veya değer atar.
+pop_back: Vektörün son elemanını kaldırır.
+push_back: Vektörün sonuna bir eleman ekler.
+rbegin: Ters başlangıç iteratorunu döndürür.
+rend: Ters bitiş iteratorunu döndürür.
+reserve: Belirtilen kapasiteyi ayırır.
+resize: Vektörün boyutunu değiştirir.
+shrink_to_fit: Kapasiteyi mevcut boyuta indirir.
+size: Vektördeki mevcut eleman sayısını döndürür.
+swap: İki vektörün içeriğini değiştirir.
 
 */

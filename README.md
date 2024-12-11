@@ -10,9 +10,9 @@ The Topics
     vectorler                       OK
     std::array                      OK
     pointer                         O
-        class 
-        constructor_destructor
-        object relationships
+        class                       OK
+        constructor_destructor      OK
+        object relationships        OK
         encapsulation
         inheritance
         exceptions

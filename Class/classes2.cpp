@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include <Vector>
+#include <vector>
 
 static const long long int ana_konum = 100000000;
 static int okul_sayisi = 0;
@@ -30,19 +30,19 @@ public:
     }
 
     void  bilgi_al(){
+        std::cin.ignore();
         std::cout << "merhaba bana bilgilerini ver " << std::endl;
         std::cout << "okudugun okulu yazarmsin " << std::endl;
         std::getline(std::cin, okudugu_okul);
-          std::cin.ignore();
         std::cout << "okudugun bolumu yazarmisin " << std::endl;
         std::getline(std::cin, okudugu_bolum);
-          std::cin.ignore();
         std::cout << "giridigin seneyi girermisin " << std::endl;
         std::cin >> girdigi_sene;
         std::cout << "aldigin ders sayisini yazarmisin " << std::endl;
         std::cin >> aldigi_ders_sayisi;
         std::cout << "kaldigi konum nedir " << std::endl;
         std::cin >> konum;
+       
          
     }
 
@@ -103,6 +103,7 @@ class Universite{
     }
 
     void veri_al(){ // switch case ile yapilcak 
+        std::cin.ignore();
         std::cout << " merhaba bana universite bilgilerini ver " << std::endl;
         std::cout << " universitenin yapim yili kac " << std::endl;
         std::cin >> yapim_yili;
@@ -150,9 +151,9 @@ std::vector<Ogrenci> objelerO;
         if (eklemekO) {
             Ogrenci ogrenci;
             ogrenci.bilgi_al();
-            std::cin.ignore();
             ogrenci.bilgileri_dogrula();
             ogrenci.onaylama();
+            std::cin.ignore();
             objelerO.emplace_back(ogrenci);
         }else{
             break;
@@ -170,8 +171,8 @@ bool eklemekU;
         if (eklemekU) {
             Universite universite;
             universite.veri_al();
-            std::cin.ignore();
             universite.bilgiler_yaz();
+             std::cin.ignore();
             objelerU.emplace_back(universite);
         }else{
             break;
@@ -180,5 +181,5 @@ bool eklemekU;
 
 
 
-    return 0;
+    system("kafani sikigim amk hala calistiramadinmi");
 }

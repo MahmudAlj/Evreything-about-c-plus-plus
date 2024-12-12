@@ -2,7 +2,6 @@
 #include <vector>
 #include <string>
 
-
 int main() {
 
   // Vector

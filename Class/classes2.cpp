@@ -1,13 +1,13 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <memory> 
 
 static const long long int ana_konum = 100000000;
 static int okul_sayisi = 0;
 static int ogrenci_sayisi = 0;
 
-
-class Ogrenci{
+class Ogrenci {
 protected:
     int age = 20;
     double hight = 1.80;
@@ -22,14 +22,13 @@ public:
     int girdigi_sene;
     int aldigi_ders_sayisi;
     long long int konum;
-    
 
-    Ogrenci(){
+    Ogrenci() {
         std::cout << "Ogrenci basladi" << std::endl;
         ogrenci_sayisi++;
     }
 
-    void  bilgi_al(){
+    void bilgi_al() {
         std::cin.ignore();
         std::cout << "merhaba bana bilgilerini ver " << std::endl;
         std::cout << "okudugun okulu yazarmsin " << std::endl;
@@ -42,73 +41,51 @@ public:
         std::cin >> aldigi_ders_sayisi;
         std::cout << "kaldigi konum nedir " << std::endl;
         std::cin >> konum;
-       
-         
     }
 
-    void bilgileri_dogrula(){
-        std::cout << " senin adin =" << name << std::endl;
+    void bilgileri_dogrula() {
+        std::cout << " senin adin = " << name << std::endl;
         std::cout << " senin soyadin = " << last_name << std::endl;
         std::cout << " senin yasin = " << age << std::endl;
         std::cout << " senin boyun = " << hight << std::endl;
-
         std::cout << " senin okudugun okul = " << okudugu_okul << std::endl;
         std::cout << " senin okudugun bolum = " << okudugu_bolum << std::endl;
         std::cout << " senin girdigin sene = " << girdigi_sene << std::endl;
-        std::cout << " senin aldigin ders sayisi = " << aldigi_ders_sayisi  << std::endl;
+        std::cout << " senin aldigin ders sayisi = " << aldigi_ders_sayisi << std::endl;
         std::cout << " kaldigin konum = " << konum << std::endl;
     }
 
-    // bool onaylama(){
-    //     bool begendinmi;
-    //     std::cout << "programi begendinmi " << std::endl;
-    //     std::cin >> begendinmi;
-    //     if (begendinmi == 1){
-    //         std::cout << "kusura bakma" << std::endl;
-    //         std::cout << "program bitti " << std::endl;
-    //     }else {
-    //         std::cout << "programi begendine sevindim" << std::endl;
-    //         std::cout << "program bitti " << std::endl;
-    //     }
-    //     std::cout << "Program bitti" << std::endl;
-    //     return begendinmi;
-    // }
-
-    ~Ogrenci(){
-    std::cout << "destruct calisti" << std::endl;
-    std::cout << " simdiye kadar bu kadar ogrenci basvurdu = " << ogrenci_sayisi << std::endl;
-   
+    ~Ogrenci() {
+        std::cout << "destruct calisti" << std::endl;
     }
 };
 
+class Universite {
+private:
+    long int konum = ana_konum + 1;
 
-class Universite{
-    protected:
-       
-    private:
-        long int konum = ana_konum + 1;
-        
-    public:
-        int yapim_yili;
-        std::string okul_name;
-        int ogrenci_sayisi;
-        int bina_sayisi;
-        int fakulte_sayisi;
-        int bolum_sayisi;
-        int kutuphane_sayisi;
-        int yemekhane_sayisi;
+public:
+    int yapim_yili;
+    std::string okul_name;
+    int ogrenci_sayisi;
+    int bina_sayisi;
+    int fakulte_sayisi;
+    int bolum_sayisi;
+    int kutuphane_sayisi;
+    int yemekhane_sayisi;
 
-    Universite(){
+    Universite() {
         std::cout << "class basladi " << std::endl;
         okul_sayisi++;
     }
 
-    void veri_al(){ // switch case ile yapilcak 
+    void veri_al() {
         std::cin.ignore();
         std::cout << " merhaba bana universite bilgilerini ver " << std::endl;
         std::cout << " universitenin yapim yili kac " << std::endl;
         std::cin >> yapim_yili;
         std::cout << " okulun adi ne " << std::endl;
+        std::cin.ignore();
         std::getline(std::cin, okul_name);
         std::cout << "ogrenci sayisini gir " << std::endl;
         std::cin >> ogrenci_sayisi;
@@ -117,12 +94,12 @@ class Universite{
         std::cout << " fakulte sayisini gir " << std::endl;
         std::cin >> fakulte_sayisi;
         std::cout << " bolum sayisini gir " << std::endl;
-        std::cin >> bolum_sayisi; 
-        std::cout << " kutuphane ve yemekhane sayilarini gir " << std::endl; 
-        std::cin >> kutuphane_sayisi, yemekhane_sayisi;
+        std::cin >> bolum_sayisi;
+        std::cout << " kutuphane ve yemekhane sayilarini gir " << std::endl;
+        std::cin >> kutuphane_sayisi >> yemekhane_sayisi;
     }
 
-    void bilgiler_yaz(){
+    void bilgiler_yaz() {
         std::cout << okul_name << yapim_yili << " yilinda yapildi " << std::endl;
         std::cout << ogrenci_sayisi << " okuyan kisi vardir " << std::endl;
         std::cout << bina_sayisi << " bina vardir" << std::endl;
@@ -130,57 +107,38 @@ class Universite{
         std::cout << bolum_sayisi << " bolum vardir" << std::endl;
         std::cout << kutuphane_sayisi << " calisma alani vardir " << std::endl;
         std::cout << yemekhane_sayisi << " yemekhane vardir " << std::endl;
-
     }
-    ~Universite(){
+
+    ~Universite() {
         std::cout << "coddan cikildi " << std::endl;
     }
 };
 
-// bu alınan bilgiler 
-int main(){
-
-std::vector<Ogrenci> objelerO;
-
-    bool eklemekO;
+int main() {
+    std::vector<std::unique_ptr<Ogrenci>> objelerO;
+    char cevap;
     do {
-        char cevap;
         std::cout << "Ogrenci Eklemek ister misiniz? (e/h): ";
         std::cin >> cevap;
-        eklemekO = (cevap == 'e' || cevap == 'E');
-
-        if (eklemekO) {
-            Ogrenci ogrenci;
-            ogrenci.bilgi_al();
-            ogrenci.bilgileri_dogrula();
-            //ogrenci.onaylama();
-            std::cin.ignore();
-            objelerO.emplace_back(ogrenci);
-        }else{
-            break;
+        if (cevap == 'e' || cevap == 'E') {
+            auto ogrenci = std::make_unique<Ogrenci>();
+            ogrenci->bilgi_al();
+            ogrenci->bilgileri_dogrula();
+            objelerO.emplace_back(std::move(ogrenci));
         }
-    } while (eklemekO);
+    } while (cevap == 'e' || cevap == 'E');
 
-std::vector<Universite> objelerU;
-bool eklemekU;
+    std::vector<std::unique_ptr<Universite>> objelerU;
     do {
-        char cevap;
         std::cout << "Universite Eklemek ister misiniz? (e/h): ";
         std::cin >> cevap;
-        eklemekU = (cevap == 'e' || cevap == 'E');
-
-        if (eklemekU) {
-            Universite universite;
-            universite.veri_al();
-            universite.bilgiler_yaz();
-             std::cin.ignore();
-            objelerU.emplace_back(universite);
-        }else{
-            break;
+        if (cevap == 'e' || cevap == 'E') {
+            auto universite = std::make_unique<Universite>();
+            universite->veri_al();
+            universite->bilgiler_yaz();
+            objelerU.emplace_back(std::move(universite));
         }
-    } while (eklemekU);
+    } while (cevap == 'e' || cevap == 'E');
 
-
-
-    system("kafani sikigim amk hala calistiramadinmi");
+    return 0;
 }

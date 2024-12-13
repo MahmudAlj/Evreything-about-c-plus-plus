@@ -57,26 +57,27 @@ public:
         std::cout << " senin girdigin sene = " << girdigi_sene << std::endl;
         std::cout << " senin aldigin ders sayisi = " << aldigi_ders_sayisi  << std::endl;
         std::cout << " kaldigin konum = " << konum << std::endl;
-        std::cout << " simdiye kadar bu kadar ogrenci basvurdu = " << ogrenci_sayisi << std::endl;
     }
 
-    bool onaylama(){
-        bool begendinmi;
-        std::cout << "programi begendinmi " << std::endl;
-        std::cin >> begendinmi;
-        if (begendinmi == 1){
-            std::cout << "kusura bakma" << std::endl;
-            std::cout << "program bitti " << std::endl;
-        }else {
-            std::cout << "programi begendine sevindim" << std::endl;
-            std::cout << "program bitti " << std::endl;
-        }
-        std::cout << "Program bitti" << std::endl;
-        return begendinmi;
-    }
+    // bool onaylama(){
+    //     bool begendinmi;
+    //     std::cout << "programi begendinmi " << std::endl;
+    //     std::cin >> begendinmi;
+    //     if (begendinmi == 1){
+    //         std::cout << "kusura bakma" << std::endl;
+    //         std::cout << "program bitti " << std::endl;
+    //     }else {
+    //         std::cout << "programi begendine sevindim" << std::endl;
+    //         std::cout << "program bitti " << std::endl;
+    //     }
+    //     std::cout << "Program bitti" << std::endl;
+    //     return begendinmi;
+    // }
 
     ~Ogrenci(){
     std::cout << "destruct calisti" << std::endl;
+    std::cout << " simdiye kadar bu kadar ogrenci basvurdu = " << ogrenci_sayisi << std::endl;
+   
     }
 };
 
@@ -152,7 +153,7 @@ std::vector<Ogrenci> objelerO;
             Ogrenci ogrenci;
             ogrenci.bilgi_al();
             ogrenci.bilgileri_dogrula();
-            ogrenci.onaylama();
+            //ogrenci.onaylama();
             std::cin.ignore();
             objelerO.emplace_back(ogrenci);
         }else{

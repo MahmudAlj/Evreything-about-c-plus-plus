@@ -31,3 +31,16 @@ my_file >> line;
 
     return 0;  
 }
+
+
+
+/*
+std::ios_base::out      = dosya yazmaya acik 
+std::ios_base::in       = dosya okunmaya acik
+std::ios_base::binary   = dosya icerikleri metin yerine ikili veri olarak ele alimnir
+std::ios_base::ate      = dosya  dosyanin sonunda dosaya isaretcisi olarak sekilde acilir
+std::ios_base::app      = yeni veriler her zaman dosaynin sonuna yazilir
+std::ios_base::trunc    = dosyanin icerigi dosya acildiginda hemen silinir 
+
+
+*/

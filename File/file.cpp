@@ -36,11 +36,31 @@ my_file >> line;
 
 /*
 std::ios_base::out      = dosya yazmaya acik 
-std::ios_base::in       = dosya okunmaya acik
+std::ios_base::in       = dosya okunmaya acik 
 std::ios_base::binary   = dosya icerikleri metin yerine ikili veri olarak ele alimnir
 std::ios_base::ate      = dosya  dosyanin sonunda dosaya isaretcisi olarak sekilde acilir
 std::ios_base::app      = yeni veriler her zaman dosaynin sonuna yazilir
 std::ios_base::trunc    = dosyanin icerigi dosya acildiginda hemen silinir 
+
+is_open()               = dosya aciksa true degeri dondurur
+close()                 = dosya kapaliysa false degeri dondurur
+
+pubseekpos(position, pointer)
+    std::ios_base::out  = okuma isaretcisini hareket ettirin
+    std::ios_base::in   = yazma isaretcisini hareket ettirin
+pubseekoff(offset, origin, pointer)
+    std::ios_base::beg  = dosyanin baslangicina gore ofset
+    std::ios_base::cur  = gecerli dosya isaretcisi konumuna gore ofset
+    std::ios_base::end  = dosyanin sonuna gore ofset
+
+in_avail()              = dosyada  okunabilecek karakter sayisini dondurur
+snextc()                = dosya isaretcisini bir karakter ileri tasir ve yeni konumdaki karakterin ascii degerini dondurur
+sbumpc()                = gecerli konumdaki karaktern ascii degerini dondurur ve dosya isaretcisini bir karakter ileri tasir
+sgetc()                 = gecerli konumdaki karakterin ascii degerini dondurur ve dosya isaretcisini bir karkater ileri tasir
+sgetn()                 = Yöntem dosyadan n karakter okur ve bunları hedef parametresi tarafından belirtilen diziye yazar . Bu yöntem okunan karakter sayısını döndürür.sgetn(destination, n)char
+sputc()                 = Yöntem sputc()geçerli konuma bir karakter yazar ve ardından dosya işaretçisini bir karakter ileri taşır. Bu yöntem yazılan karakterin ASCII değerini döndürür.
+sputn()                 = Yöntem , kaynak parametresi tarafından belirtilen diziden n karakteri dosyaya yazar . Dosya işaretçisi n karakter ileri taşınır. Bu yöntem, dosyaya yazılan karakter sayısını döndürür.sputn(source, n)char
+
 
 
 */

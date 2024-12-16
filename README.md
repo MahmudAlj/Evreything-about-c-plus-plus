@@ -57,87 +57,86 @@ The Topics
 
 
 extralar
-    <cassert> (assert.h)
-    <cctype> (ctype.h)
-    <cerrno> (errno.h)
-    <cfenv> (fenv.h)
-    <cfloat> (float.h)
-    <cinttypes> (inttypes.h)
-    <ciso646> (iso646.h)
-    <climits> (limits.h)
-    <clocale> (locale.h)
-    <cmath> (math.h)
-    <csetjmp> (setjmp.h)
-    <csignal> (signal.h)
-    <cstdarg> (stdarg.h)
-    <cstdbool> (stdbool.h)
-    <cstddef> (stddef.h)
-    <cstdint> (stdint.h)
-    <cstdio> (stdio.h)
-    <cstdlib> (stdlib.h)
-    <cstring> (string.h)
-    <ctgmath> (tgmath.h)
-    <ctime> (time.h)
-    <cuchar> (uchar.h)
-    <cwchar> (wchar.h)
-    <cwctype> (wctype.h)
+    <cassert>: Koşul doğrulama (assert).
+    <cctype>: Karakter işlemleri (isdigit, isalpha vs.).
+    <cerrno>: Hata kodları ve açıklamaları.
+    <cfenv>: Yüzer nokta işlem durumu ve denetimleri.
+    <cfloat>: Yüzer nokta sınır ve özellikleri.
+    <cinttypes>: Tamsayı türleri ve biçimlendirme.
+    <ciso646>: Alternatif operatör adları (and, or vs.).
+    <climits>: Tamsayı sınırları.
+    <clocale>: Yerel ayarları işleme.
+    <cmath>: Matematiksel işlemler (sin, sqrt, pow vs.).
+    <csetjmp>: Uzun atlamalar için (setjmp, longjmp).
+    <csignal>: Sinyal işleme (ör. kesme, sonlandırma).
+    <cstdarg>: Değişken argüman listesi.
+    <cstdbool>: Boolean türü (true, false).
+    <cstddef>: Temel tanımlar (size_t, nullptr).
+    <cstdint>: Sabit genişlikte tamsayı türleri.
+    <cstdio>: Giriş/çıkış işlemleri (printf, scanf).
+    <cstdlib>: Genel amaçlı yardımcılar (malloc, rand).
+    <cstring>: C tarzı string işlemleri (strcpy, strcmp).
+    <ctgmath>: Matematik işlemlerinin genel hali.
+    <ctime>: Tarih ve zaman işlemleri (time, clock).
+    <cuchar>: Unicode karakter işlemleri.
+    <cwchar>: Geniş karakter işlemleri (wstring).
+    <cwctype>: Geniş karakter sınıflandırma ve dönüşüm.
 
-Containers:
-    <array>
-    <deque>
-    <forward_list>
-    <list>
-    <map>
-    <queue>
-    <set>
-    <stack>
-    <unordered_map>
-    <unordered_set>
-    <vector>
+Kapsayıcılar (Containers):
+    <array>: Sabit boyutlu diziler.
+    <deque>: Çift uçlu sıralar.
+    <forward_list>: Tek yönlü bağlantılı listeler.
+    <list>: Çift yönlü bağlantılı listeler.
+    <map>: Anahtar-değer eşlemeleri.
+    <queue>: FIFO sırası.
+    <set>: Benzersiz sıralı elemanlar.
+    <stack>: LIFO yığını.
+    <unordered_map>: Hash tabanlı anahtar-değer eşlemeleri.
+    <unordered_set>: Hash tabanlı benzersiz elemanlar.
+    <vector>: Dinamik diziler.
 
-Input/Output:
-    <fstream>
-    <iomanip>
-    <ios>
-    <iosfwd>
-    <iostream>
-    <istream>
-    <ostream>
-    <sstream>
-    <streambuf>
+Giriş/Çıkış (I/O):
+    <fstream>: Dosya giriş/çıkışı.
+    <iomanip>: I/O formatlama.
+    <ios>: I/O akış temel sınıfı.
+    <iosfwd>: I/O yönlendirme bildirimleri.
+    <iostream>: Standart I/O akışları.
+    <istream>: Giriş akışı.
+    <ostream>: Çıkış akışı.
+    <sstream>: String tabanlı akışlar.
+    <streambuf>: Akış tamponları.
 
-Multi-threading:
-    <atomic>
-    <condition_variable>
-    <future>
-    <mutex>
-    <thread>
+Çoklu İş Parçacığı (Multi-threading):
+    <atomic>: Atomik işlemler.
+    <condition_variable>: Koşul değişkenleri.
+    <future>: Gelecek nesneleri ve sözler.
+    <mutex>: Kilitleme mekanizmaları.
+    <thread>: İş parçacıkları.
 
-Other:
-    <algorithm>
-    <bitset>
-    <chrono>
-    <codecvt>
-    <complex>
-    <exception>
-    <functional>
-    <initializer_list>
-    <iterator>
-    <limits>
-    <locale>
-    <memory>
-    <new>
-    <numeric>
-    <random>
-    <ratio>
-    <regex>
-    <stdexcept>
-    <string>
-    <system_error>
-    <tuple>
-    <type_traits>
-    <typeindex>
-    <typeinfo>
-    <utility>
-    <valarray>
-
+Diğer:
+    <algorithm>: Algoritmalar (sort, find, copy).
+    <bitset>: Bit dizileri.
+    <chrono>: Tarih ve zaman ölçümü.
+    <codecvt>: Karakter kodu dönüşümü.
+    <complex>: Kompleks sayılar.
+    <exception>: Özel durum (exception) işleme.
+    <functional>: İşlev nesneleri ve lambda desteği.
+    <initializer_list>: Başlatıcı listeler.
+    <iterator>: İteratörler.
+    <limits>: Tür sınırları.
+    <locale>: Yerel ayar desteği.
+    <memory>: Dinamik bellek yönetimi.
+    <new>: Dinamik bellek tahsisi (new/delete).
+    <numeric>: Sayısal algoritmalar (accumulate).
+    <random>: Rastgele sayı üretimi.
+    <ratio>: Derleyici zamanı oran hesaplama.
+    <regex>: Düzenli ifadeler.
+    <stdexcept>: Çalışma zamanı hataları.
+    <string>: String işleme.
+    <system_error>: Sistem hataları.
+    <tuple>: Sabit boyutlu veri grupları.
+    <type_traits>: Tür özellikleri.
+    <typeindex>: Tür bilgisi için hash tabanlı arama.
+    <typeinfo>: Tür bilgisi (RTTI).
+    <utility>: Yardımcılar (pair, move, swap).
+    <valarray>: Sayısal dizi işlemleri.

@@ -21,7 +21,7 @@ std::cout << *it + 1 << std::endl; // index 0 + 1 = 3
 
 
 
-std::set<std::string> mystring{"mehmud","mahmud","gokay"};
+std::set<std::string> mystring{"mehmud","mahmud","gokay","sinem"};
 for(std::set<std::string>::iterator it1 = mystring.begin(); it1 != mystring.end(); it1++){
     std::cout << *it1 << std::endl;
 }

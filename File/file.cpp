@@ -61,6 +61,22 @@ sgetn()                 = Yöntem dosyadan n karakter okur ve bunları hedef par
 sputc()                 = Yöntem sputc()geçerli konuma bir karakter yazar ve ardından dosya işaretçisini bir karakter ileri taşır. Bu yöntem yazılan karakterin ASCII değerini döndürür.
 sputn()                 = Yöntem , kaynak parametresi tarafından belirtilen diziden n karakteri dosyaya yazar . Dosya işaretçisi n karakter ileri taşınır. Bu yöntem, dosyaya yazılan karakter sayısını döndürür.sputn(source, n)char
 
+std::fstream MyFile("dosya akisi")
+seekg(position)         = okunan dosya isaretcisi dosyanin baslangicina gore belirtilen bir konuma tasir 
+seekg(position, origin) = okuma dosyasi isaretcisini bir kokene gore dosyada belirtilen bir konuma tasir kokenin uc olası degerı vardir 
+    std::fstream::beg   = konum dosyanin baslangicina goredir
+    std::fstream::cur   = konum gecerli dosya konumuna goredir
+    std::fstream::end   = pozisyon dosyanin sonuna goredir
+tellg()                 = dosyadaki dosya isaretcisinin gecerkş konumuna dondurur
+seekp(position)         = yazma dosyasi isaretcisini dosyanin baslangicina gore belirtilen bşr konuma tasir 
+sekkp(position, origin) = yazma dosyanin isaretcisini bir kokene gore dosyada belirtilen bir konuma tasir kokenin uc olasi degeri vardir 
+    std::fstream::beg   = konum dosyanin baslangicina goredir
+    std::fstream::cur   = konum gecerli dosya konumuna goredir
+    std::fstream::end   = pozisyon dosyanin sonuna goredir
+tellp()                 = dosyadaki yazma dosyasi isaretcisinin gecerli konumunu dondurur
+
+dosya okum 
+get()                   = bir dosyadan tek bir karakter okur ve ASCII değerini bir intdeğer olarak döndürür. Karakteri görmek için onu bir türe dönüştürün char. Dosya işaretçisi dosyadaki bir sonraki karaktere taşınır.
 
 
 */

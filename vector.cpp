@@ -23,7 +23,7 @@ int size = myVector.size(); //Vektörün boyutunu size() işlevi ile öğrenebil
 int capacity = myVector.capacity(); //Vektörün kapasitesini capacity() işlevi ile öğrenebilirsiniz:
 myVector.clear(); // Vektörü temizler (elemanları siler)
 myVector.assign(5, 42); // Tüm elemanları 42 ile doldurur Vektörün boyutunu değiştirmeden tüm elemanlarını belirli bir değerle doldurmak için assign() işlevini kullanabilirsiniz:
-//Diğer İşlevler: std::vector'ün diğer birçok işlevi bulunur, örneğin insert(), erase(), resize(), swap(), emplace_back(), ve daha fazlası. İhtiyacınıza göre belirli işlemleri gerçekleştirmek için bu işlevleri kullanabilirsiniz.
+
 
 
 

@@ -1,33 +1,8 @@
 This project is written with a little bit of everything available about C++.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-The Topics
+ 
+    The Topics
     terminal komutlari
     veri tipleri                    OK
     yazdirma islemleri              OK
@@ -52,7 +27,6 @@ The Topics
         virtual function
         inline function
         static - override function
-
     random                          OK
     union
     struct
@@ -84,7 +58,8 @@ The Topics
 
 
 
-extralar
+
+    extralar
     <cassert>: Koşul doğrulama (assert).
     <cctype>: Karakter işlemleri (isdigit, isalpha vs.).
     <cerrno>: Hata kodları ve açıklamaları.
@@ -109,8 +84,8 @@ extralar
     <cuchar>: Unicode karakter işlemleri.
     <cwchar>: Geniş karakter işlemleri (wstring).
     <cwctype>: Geniş karakter sınıflandırma ve dönüşüm.
-
-Kapsayıcılar (Containers):
+    
+    Kapsayıcılar (Containers):
     <array>: Sabit boyutlu diziler.
     <deque>: Çift uçlu sıralar.
     <forward_list>: Tek yönlü bağlantılı listeler.
@@ -123,7 +98,7 @@ Kapsayıcılar (Containers):
     <unordered_set>: Hash tabanlı benzersiz elemanlar.
     <vector>: Dinamik diziler.
 
-Giriş/Çıkış (I/O):
+    Giriş/Çıkış (I/O):
     <fstream>: Dosya giriş/çıkışı.
     <iomanip>: I/O formatlama.
     <ios>: I/O akış temel sınıfı.
@@ -134,14 +109,14 @@ Giriş/Çıkış (I/O):
     <sstream>: String tabanlı akışlar.
     <streambuf>: Akış tamponları.
 
-Çoklu İş Parçacığı (Multi-threading):
+    Çoklu İş Parçacığı (Multi-threading):
     <atomic>: Atomik işlemler.
     <condition_variable>: Koşul değişkenleri.
     <future>: Gelecek nesneleri ve sözler.
     <mutex>: Kilitleme mekanizmaları.
     <thread>: İş parçacıkları.
 
-Diğer:
+    Diğer:
     <algorithm>: Algoritmalar (sort, find, copy).
     <bitset>: Bit dizileri.
     <chrono>: Tarih ve zaman ölçümü.

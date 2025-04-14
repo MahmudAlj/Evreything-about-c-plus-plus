@@ -14,10 +14,10 @@ This project is written with a little bit of everything available about C++.
     operatorler                     OK
     vectorler                       OK
     std::array                      OK
-    pointer                         O
-        class                       OK
-        constructor_destructor      OK
-        object relationships        OK
+    pointer                         OK
+    class                           OK
+        constructor_destructor          OK
+        object relationships            OK
         encapsulation
         inheritance
         exceptions
@@ -30,7 +30,7 @@ This project is written with a little bit of everything available about C++.
         inline function
         static - override function
     random                          OK
-    union
+    unione
     struct
     enums
     istisnai durumlar 

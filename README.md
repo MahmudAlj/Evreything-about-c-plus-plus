@@ -2,10 +2,12 @@ This project is written with a little bit of everything available about C++.
 
 Projeler 
     ATM
-    MORSE ALFADESİ
+    Morse alfabesi
     YİLAN OYUNU 
     HELLO WORLD
     NOT DEFTERİ
+    Yazilani yavaş yavaş yazma 
+    Sürekli dünen cümle
     
 
 =======

@@ -1,6 +1,7 @@
 {
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
+        "*.embeddedhtml": "html",
         "iostream": "cpp",
         "array": "cpp",
         "atomic": "cpp",
@@ -59,6 +60,7 @@
         "map": "cpp",
         "set": "cpp",
         "unordered_set": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "cstring": "cpp"
     }
 }

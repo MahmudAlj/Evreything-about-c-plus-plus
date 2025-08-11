@@ -11,8 +11,6 @@ Projeler
     
 
 =======
-
- 
     The Topics
     terminal komutlari
     veri tipleri                    OK

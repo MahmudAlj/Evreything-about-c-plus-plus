@@ -37,7 +37,7 @@ Projeler
         inline function
         static - override function
     random                          OK
-    unione
+    union
     struct
     enums
     istisnai durumlar 
